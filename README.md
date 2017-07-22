@@ -20,3 +20,10 @@ Host hostname
 7. Ensure code is pushed to github
 8. Add the project to CircleCI
 9. Follow the steps there to add the config to the project
+
+# CircleCI Configuration
+1. Create a .circleci directory `mkdir .circleci`
+2. Add a `config.yml` file to that directory
+3. Push to github and watch the build process
+
+
