@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /var/www
     docker:
-      - image: php:7.1.5-browsers
+      - image: circleci/php:7.1.5-browsers
         environment:
           APP_ENV: staging
     steps:
