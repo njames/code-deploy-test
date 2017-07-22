@@ -7,9 +7,6 @@ jobs:
         environment:
           APP_ENV: staging
     steps:
-      - run:
-          name: Install system packages
-          command: sudo apt-get update && sudo apt-get -y install git
       - checkout
       - run:
           name: Copy Env file
@@ -33,3 +30,7 @@ jobs:
       - run:
           name: Run Unit tests
           command: vendor/bin/phpunit
+      - run: 
+          name: Install Python 
+          command: |
+            python -v
