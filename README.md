@@ -18,3 +18,5 @@ Host hostname
 5. Build the host with ansible 
 6. Ensure the security group has http/s open
 7. Ensure code is pushed to github
+8. Add the project to CircleCI
+9. Follow the steps there to add the config to the project
