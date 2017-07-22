@@ -36,5 +36,5 @@ jobs:
       - run: 
           name: Install Python 
           command: |
-            sudo apt-get -y install python
+            python -c "print('hello')"
             python --version
