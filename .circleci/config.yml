@@ -34,7 +34,7 @@ jobs:
           name: Run Unit tests
           command: vendor/bin/phpunit
       - run: 
-          name: Install Python 
+          name: Install AWS Client
           command: |
-            python -c "print('hello')"
-            python --version
+            sudo apt-get install awscli
+            aws --version
