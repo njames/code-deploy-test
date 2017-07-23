@@ -30,11 +30,11 @@ jobs:
       - run:
           name: Install project dependencies
           command: php composer.phar install
-      - run:
-          name: Run Unit tests
-          command: vendor/bin/phpunit
       - run: 
           name: Install AWS Client
           command: |
             sudo apt-get install awscli
             aws --version
+      - run:
+          name: Run Unit tests
+          command: vendor/bin/phpunit
